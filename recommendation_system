@@ -1,0 +1,16 @@
+movies = {
+    "action":["Mad Max", "John Wick", "Gladiator"],
+    "horror":["conjuring", "Annabelle", "Insidious"],
+    "comedy":["The Mask", "Mr Bean", "Home alone"],
+    "romance":["Titanic", "Notebook", "La La Land"],
+}
+print("Movie recommendation System")
+print("Available genres:Action, Horror, Comedy, Romance")
+
+user_choice = input("Enter your favorite genre:").lower()
+if user_choice in movies:
+    print("\nRecommended Movies:")
+    for movie in movies[user_choice]:
+        print("-",movie)
+else:
+    print("sorry,genre not found!")        
